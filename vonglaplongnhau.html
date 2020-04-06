@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vòng lặp lồng nhau "for"</title>
+</head>
+<body>
+<script>
+    let sapa;
+    sapa = "<table border ='1' width ='300' cellspacing = '0' cellspadding ='3'>"
+    for (i = 1 ; i <= 10 ; i ++) {
+        sapa = sapa + "<tr>";
+        for (j = 1 ; j <= 10 ; j ++) {
+            sapa = sapa + "<td>" + i * j + "</td>";
+        }
+        sapa = sapa + "</tr>"
+    }
+    sapa = sapa + "</table>";
+    document.write(sapa);
+</script>`
+</body>
+</html>

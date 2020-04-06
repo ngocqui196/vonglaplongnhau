@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vòng lặp lồng nhau "while"</title>
+</head>
+<body>
+<script language="javascript">
+    let keep, i, j;
+    keep ="<table border = '1' width = '300' cellspacing = '0' cellspadding = '2'>";
+    i = j = 1;
+    while (i <= 10) {
+        keep = keep + "<tr>";
+        while (j <= 10) {
+            keep = keep + "<td>" + i * j + "</td>";
+            j ++;
+        }
+        keep = keep + "</tr>";
+        j = 1;
+        i ++;
+    }
+    keep = keep + "</table>";
+    document.write(keep);
+</script>
+</body>
+</html>
